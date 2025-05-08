@@ -130,7 +130,6 @@ model_lookup = {
 # Train best model
 best_model = model_lookup[best_model_name]
 best_model.fit(X_train_scaled, y_train)
-
 # Proceed with prediction (use new_df_encoded_scaled if scaling was successful)
 if existing_numeric_columns:
     X_new = new_df_encoded_scaled  # No need to drop the identifier columns now
